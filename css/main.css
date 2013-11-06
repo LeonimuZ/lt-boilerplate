@@ -1,0 +1,226 @@
+/*===========================================================================
+    LT Boilerplate stylesheet by:
+    Leon Taveras (LeonimuZ) || http://about.me/lnz
+
+    Includes styles from:
+    YUI Pure, H5bp, Foundation, CSS-Tricks.com,
+    SachaGreif.com and FlatUI.
+===========================================================================*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+a {
+  color: #95a5a6;
+  text-decoration: none; }
+  a:hover {
+    color: #617374; }
+  a:link {
+    -webkit-tap-highlight-color: #798d8f; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+hr {
+  display: block;
+  margin: 1em 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #d6d6d6; }
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+input:-moz-placeholder {
+  color: #a9a9a9; }
+
+textarea:-moz-placeholder {
+  color: #a9a9a9; }
+
+fieldset {
+  border: 0; }
+
+textarea {
+  resize: vertical; }
+
+.left {
+  float: left !important; }
+
+.right {
+  float: right !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.pure-button {
+  padding: .5em 1.3em;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f0f0), color-stop(100%, #c0c0c0)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f0f0f0), color-stop(100%, #c0c0c0));
+  background-image: -webkit-linear-gradient(top, #f0f0f0 0%, #c0c0c0 100%), -webkit-linear-gradient(bottom, #f0f0f0 0%, #c0c0c0 100%);
+  background-image: -moz-linear-gradient(top, #f0f0f0 0%, #c0c0c0 100%), -moz-linear-gradient(bottom, #f0f0f0 0%, #c0c0c0 100%);
+  background-image: -o-linear-gradient(top, #f0f0f0 0%, #c0c0c0 100%), -o-linear-gradient(bottom, #f0f0f0 0%, #c0c0c0 100%);
+  background-image: linear-gradient(top, #f0f0f0 0%, #c0c0c0 100%), linear-gradient(bottom, #f0f0f0 0%, #c0c0c0 100%);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.7), inset 0 1px 2px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.24);
+  color: #111111; }
+  .pure-button:hover {
+    background-color: #f0f0f0; }
+
+.pure-button-primary {
+  border: 1px solid #06131b;
+  background-color: #184c6f;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #184c6f), color-stop(100%, #133c58)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #184c6f), color-stop(100%, #133c58));
+  background-image: -webkit-linear-gradient(top, #184c6f 0%, #133c58 100%), -webkit-linear-gradient(bottom, #184c6f 0%, #133c58 100%);
+  background-image: -moz-linear-gradient(top, #184c6f 0%, #133c58 100%), -moz-linear-gradient(bottom, #184c6f 0%, #133c58 100%);
+  background-image: -o-linear-gradient(top, #184c6f 0%, #133c58 100%), -o-linear-gradient(bottom, #184c6f 0%, #133c58 100%);
+  background-image: linear-gradient(top, #184c6f 0%, #133c58 100%), linear-gradient(bottom, #184c6f 0%, #133c58 100%);
+  color: #f0f0f0; }
+  .pure-button-primary:hover {
+    background-color: #184c6f; }
+
+.pure-button-success {
+  border: 1px solid #0c381e;
+  background-color: #1f8b4c;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1f8b4c), color-stop(100%, #186f3c)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #1f8b4c), color-stop(100%, #186f3c));
+  background-image: -webkit-linear-gradient(top, #1f8b4c 0%, #186f3c 100%), -webkit-linear-gradient(bottom, #1f8b4c 0%, #186f3c 100%);
+  background-image: -moz-linear-gradient(top, #1f8b4c 0%, #186f3c 100%), -moz-linear-gradient(bottom, #1f8b4c 0%, #186f3c 100%);
+  background-image: -o-linear-gradient(top, #1f8b4c 0%, #186f3c 100%), -o-linear-gradient(bottom, #1f8b4c 0%, #186f3c 100%);
+  background-image: linear-gradient(top, #1f8b4c 0%, #186f3c 100%), linear-gradient(bottom, #1f8b4c 0%, #186f3c 100%);
+  color: #f0f0f0; }
+  .pure-button-success:hover {
+    background-color: #1f8b4c; }
+
+.pure-button-error {
+  border: 1px solid #6d2018;
+  background-color: #c0392b;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c0392b), color-stop(100%, #992d22)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #c0392b), color-stop(100%, #992d22));
+  background-image: -webkit-linear-gradient(top, #c0392b 0%, #992d22 100%), -webkit-linear-gradient(bottom, #c0392b 0%, #992d22 100%);
+  background-image: -moz-linear-gradient(top, #c0392b 0%, #992d22 100%), -moz-linear-gradient(bottom, #c0392b 0%, #992d22 100%);
+  background-image: -o-linear-gradient(top, #c0392b 0%, #992d22 100%), -o-linear-gradient(bottom, #c0392b 0%, #992d22 100%);
+  background-image: linear-gradient(top, #c0392b 0%, #992d22 100%), linear-gradient(bottom, #c0392b 0%, #992d22 100%);
+  color: #f0f0f0; }
+  .pure-button-error:hover {
+    background-color: #c0392b; }
+
+.pure-button-warning {
+  border: 1px solid #6d2b00;
+  background-color: #d35400;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d35400), color-stop(100%, #a84300)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #d35400), color-stop(100%, #a84300));
+  background-image: -webkit-linear-gradient(top, #d35400 0%, #a84300 100%), -webkit-linear-gradient(bottom, #d35400 0%, #a84300 100%);
+  background-image: -moz-linear-gradient(top, #d35400 0%, #a84300 100%), -moz-linear-gradient(bottom, #d35400 0%, #a84300 100%);
+  background-image: -o-linear-gradient(top, #d35400 0%, #a84300 100%), -o-linear-gradient(bottom, #d35400 0%, #a84300 100%);
+  background-image: linear-gradient(top, #d35400 0%, #a84300 100%), linear-gradient(bottom, #d35400 0%, #a84300 100%);
+  color: #f0f0f0; }
+  .pure-button-warning:hover {
+    background-color: #d35400; }
+
+.pure-button-info {
+  border: 1px solid #196090;
+  background-color: #3498db;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3498db), color-stop(100%, #2979af)), -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #3498db), color-stop(100%, #2979af));
+  background-image: -webkit-linear-gradient(top, #3498db 0%, #2979af 100%), -webkit-linear-gradient(bottom, #3498db 0%, #2979af 100%);
+  background-image: -moz-linear-gradient(top, #3498db 0%, #2979af 100%), -moz-linear-gradient(bottom, #3498db 0%, #2979af 100%);
+  background-image: -o-linear-gradient(top, #3498db 0%, #2979af 100%), -o-linear-gradient(bottom, #3498db 0%, #2979af 100%);
+  background-image: linear-gradient(top, #3498db 0%, #2979af 100%), linear-gradient(bottom, #3498db 0%, #2979af 100%);
+  color: #f0f0f0; }
+  .pure-button-info:hover {
+    background-color: #3498db; }
+
+body {
+  background-color: #f0f0f0;
+  color: #111111; }
+
+h1 {
+  margin: 5px 0;
+  padding-left: 10px; }
+
+p {
+  padding: 0 10px;
+  font-size: 13px; }
+  @media (max-width: 767px) {
+    p {
+      font-size: 20px; } }
+
+#wrapper {
+  margin: 0 auto; }
+  @media (min-width: 980px) {
+    #wrapper {
+      width: 980px; } }
+
+/*@ sourceMappingURL=main.css.map */
