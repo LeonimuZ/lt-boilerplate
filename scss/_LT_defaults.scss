@@ -1,0 +1,299 @@
+@charset "UTF-8";
+@import "compass/css3";
+
+/*===========================================================================
+    LT Boilerplate stylesheet by:
+    Leon Taveras (LeonimuZ) || http://about.me/lnz
+
+    Includes styles from:
+    YUI Pure, H5bp, Foundation, CSS-Tricks.com,
+    SachaGreif.com and FlatUI.
+===========================================================================*/
+
+//===========================================================================
+//    Global styles & defaults.
+//    from H5BP, Global reset idea from CSS-tricks
+//===========================================================================
+*, *:before, *:after { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+//===========================================================================
+//    Colors
+//    From Flat UI http://flatuicolors.com
+//    Top: Color | Bottom: Shade
+//===========================================================================
+
+// Greenblue
+$turquoise: #1abc9c;
+$green-sea: #16a085;
+// Green
+$emerald: #2ecc71;
+$nephritis: #27ae60;
+// Blue
+$peter-river: #3498db;
+$belize-hole: #2980b9;
+// Magenta
+$amethyst: #9b59b6;
+$wisteria: #8e44ad;
+// Dark Blue
+$wet-asphalt: #34495e;
+$midnight-blue: #2c3e50;
+// Yellow
+$sun-flower: #f1c40f;
+$orange: #f39c12;
+// Orange
+$carrot: #e67e22;
+$pumpkin: #d35400;
+// Red
+$alizarin: #e74c3c;
+$pomegranate: #c0392b;
+// White
+$clouds: #ecf0f1;
+$silver: #bdc3c7;
+$whitesmoke: #f0f0f0;
+// Grey
+$concrete: #95a5a6;
+$asbestos: #7f8c8d;
+$black: #111111;
+
+//===========================================================================
+//    Transparent Black & White
+//    http://sachagreif.com/useful-sass-mixins/
+//    color(opacity)
+//===========================================================================
+@function black($opacity){
+    @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity){
+    @return rgba(255,255,255,$opacity);
+}
+
+//===========================================================================
+//    Fonts
+//===========================================================================
+
+$title-font: "Montserrat", sans-serif;
+$content-font: "Open Sans", sans-serif;
+
+//===========================================================================
+//    General styling
+//    from H5BP,  HTLM5 Reset and myself
+//===========================================================================
+body {
+    font-family: $content-font;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+a {
+    color: $concrete;
+    text-decoration: none;
+    &:hover {
+        color: darken($concrete, 20%);
+    }
+    &:link {
+        -webkit-tap-highlight-color: darken($concrete, 10%);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $title-font; }
+
+hr {
+    display: block;
+    margin: 1em 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid darken($whitesmoke, 10%);
+}
+
+ins {
+    background-color: #fcd700;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #fcd700;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+fieldset { border: 0; }
+textarea { resize: vertical; }
+
+//===========================================================================
+//    Miscellaneous HTML classes 
+//    for quick use
+//    from Foundation and by myself
+//===========================================================================
+.left { float: left !important; }
+.right { float: right !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+.text-justify  { text-align: justify !important; }
+
+//===========================================================================
+//    Fix floating elements.
+//===========================================================================
+.clearfix:before, .clearfix:after { content: " "; display: table }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+//===========================================================================
+//    Hide elements.
+//    from H5BP
+//===========================================================================
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+
+//===========================================================================
+//    Custom Buttons for YUI Pure
+//    from YUI (Dawg)
+//===========================================================================
+.pure-button {
+    $color: $whitesmoke;
+    padding: .5em 1.3em;
+    border: 1px solid darken($color, 20%);
+    border-radius: 6px;
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    box-shadow: 0 2px 6px -2px black(0.7),inset 0 1px 2px 0 white(0.5);
+    text-shadow: 0 1px 0 black(.24);
+    color: $black;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+.pure-button-primary {
+    $color: shade($belize-hole, 40%);
+    border: 1px solid darken($color, 20%);
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    color: $whitesmoke;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+.pure-button-success {
+    $color: shade($nephritis, 20%);
+    border: 1px solid darken($color, 20%);
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    color: $whitesmoke;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+.pure-button-error {
+    $color: $pomegranate;
+    border: 1px solid darken($color, 20%);
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    color: $whitesmoke;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+.pure-button-warning {
+    $color: $pumpkin;
+    border: 1px solid darken($color, 20%);
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    color: $whitesmoke;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+.pure-button-info {
+    $color: $peter-river;
+    border: 1px solid darken($color, 20%);
+    background-color: $color;
+    @include background-image(linear-gradient(top, $color 0%, shade($color, 20%) 100%), linear-gradient(bottom, $color 0%, shade($color, 20%) 100%) );
+    color: $whitesmoke;
+    &:hover {
+        background-color: $color;
+    }
+}
+
+//===========================================================================
+//    Breakpoints Mixins
+//    css-tricks.com/media-queries-sass-3-2-and-codekit
+//    @include breakpoint(name) { media: changes; }
+//===========================================================================
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 980px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 768px) and (max-width: 979px) { @content; }
+  }
+  @else if $point == notphone {
+    @media (min-width: 768px) { @content; }
+  }
+}
+
+//===========================================================================
+//    Fix position of pseudo ::before and ::after.
+//    Works only for static elements.
+//===========================================================================
+@mixin pseudo() {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+//===========================================================================
+//    Prefix all elements at once to keep scss tidy.
+//    -ms- prefix only for IE9 and up.
+//===========================================================================
+@mixin prefixer($name, $argument) {
+    #{$name}: $argument;
+    -webkit-#{$name}: $argument;
+    -moz-#{$name}: $argument;
+    -ms-#{$name}: $argument;
+    -o-#{$name}: $argument;
+}
+
+//===========================================================================
+//                                                 END OF LINE
+//===========================================================================

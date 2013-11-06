@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Leon Taveras
+    http://about.me/lnz
+
+# THANKS
+
+    Viewers like you.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Compass, Sass
+    Normalize.css, YUI Pure, jQuery, Modernizr
