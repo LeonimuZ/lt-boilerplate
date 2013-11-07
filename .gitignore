@@ -1,3 +1,5 @@
-.sass_cache/
-css/*.map
-*.zip
+*.sass-cache*
+css/*
+img/*
+!css/README.md
+!img/README.md

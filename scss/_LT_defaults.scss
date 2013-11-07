@@ -283,17 +283,5 @@ textarea { resize: vertical; }
 }
 
 //===========================================================================
-//    Prefix all elements at once to keep scss tidy.
-//    -ms- prefix only for IE9 and up.
-//===========================================================================
-@mixin prefixer($name, $argument) {
-    #{$name}: $argument;
-    -webkit-#{$name}: $argument;
-    -moz-#{$name}: $argument;
-    -ms-#{$name}: $argument;
-    -o-#{$name}: $argument;
-}
-
-//===========================================================================
 //                                                 END OF LINE
 //===========================================================================

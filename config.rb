@@ -13,11 +13,11 @@ javascripts_dir = "js"
 
 # Would you like that with sass or scss?
 output_style = :nested
-relative_assets = false
+relative_assets = true
 line_comments = false
 preferred_syntax = :scss
 
 # Like sass, sourcemaps make your life even easier
-# https://developers.google.com/chrome-developer-tools/docs/css-preprocessors
+# Needs the pre-releases (add --pre to install command) for Sass, Compass and Compass-sourcemaps
 sass_options = {:sourcemap => true}
 enable_sourcemaps = true
